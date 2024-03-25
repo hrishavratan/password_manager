@@ -16,12 +16,13 @@
     $sql=
     "CREATE TABLE IF NOT EXISTS password
     (
-        `no` INT  PRIMARY KEY AUTO_INCREMENT,
+        `no` int AUTO_INCREMENT PRIMARY KEY,
         `userid` varchar(25),
         `username` varchar(25) ,
         `password` varchar(255),
         `website` varchar(1000),
-        FOREIGN KEY(username) REFERENCES users(username)
+        `father` varchar(21)
+        -- father is actually encryption key
     );";
     try
     {

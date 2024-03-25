@@ -37,17 +37,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login page</title>
+    <link rel="icon" href="fav.webp">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <form method="post" action="login.php">
 
-        <fieldset>
+        <fieldset class="border border-solid border-black p-4 flex flex-col gap-3 w-10/12">
             <legend>Login here</legend>
             <label for="id">username: </label>
-            <input type="text" name="id"><br>
+            <input class="border border-black rounded-sm w-10/12" type="text" name="id"><br>
             <label for="pass">Password: </label>
-            <input type="password" name="pass" id="pass">
-            <button name="btn">submit</button>
+            <input class="border border-black rounded-sm w-10/12"type="password" name="pass" id="pass"><br>
+            <button class="bg-blue" name="btn">submit</button>
         </fieldset>
 
     </form>
